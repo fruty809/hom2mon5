@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/firstNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Name:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameLabel"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/secondNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstNameEditText"
+        android:layout_marginTop="16dp"
+        android:text="Second Name:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/secondNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondNameLabel"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondNameEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:text="Calculate"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/calculateButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp" />
+
+</RelativeLayout>
