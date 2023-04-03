@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">hom2mon5</string>
+    <string name="person_1_name">string</string>
+    <string name="person_2_name">string</string>
+    <string name="calculate_love_score">string</string>
+    <string name="result_text">string</string>
 </resources>

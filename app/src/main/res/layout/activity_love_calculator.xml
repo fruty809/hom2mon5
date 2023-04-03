@@ -1,60 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/firstNameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Enter your name:"
-        android:textSize="20sp" />
-
     <EditText
-        android:id="@+id/firstNameEditText"
+        android:id="@+id/editTextPerson1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/firstNameLabel"
-        android:layout_marginTop="16dp"
-        android:inputType="text"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/secondNameLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/firstNameEditText"
-        android:layout_marginTop="16dp"
-        android:text="Enter your partner's name:"
-        android:textSize="20sp" />
+        android:hint="@string/person_1_name" />
 
     <EditText
-        android:id="@+id/secondNameEditText"
+        android:id="@+id/editTextPerson2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/secondNameLabel"
-        android:layout_marginTop="16dp"
-        android:inputType="text"
-        android:textSize="20sp" />
+        android:layout_below="@id/editTextPerson1"
+        android:hint="@string/person_2_name" />
 
     <Button
-        android:id="@+id/calculateButton"
-        android:layout_width="wrap_content"
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/secondNameEditText"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:text="Calculate"
-        android:textSize="20sp" />
-
-    <TextView
-        android:id="@+id/resultTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/calculateButton"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="32dp"
-        android:textSize="24sp" />
+        android:layout_below="@id/editTextPerson2"
+        android:text="@string/calculate_love_score" />
 
 </RelativeLayout>
